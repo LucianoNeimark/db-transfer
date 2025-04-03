@@ -20,7 +20,7 @@ export PGPASSWORD="$SOURCE_DB_PASSWORD"
 # Run pg_dump and save the output
 echo "Starting database backup from $SOURCE_DB_HOST:$SOURCE_DB_PORT..."
 mkdir -p /backup
-pg_dump -h "$SOURCE_DB_HOST" -U "$SOURCE_DB_USER" -d "$SOURCE_DB_NAME" -p "$SOURCE_DB_PORT" -F c -f "/backup/$OUTPUT_FILE"
+pg_dump -h "$SOURCE_DB_HOST" -U "$SOURCE_DB_USER" -d "$SOURCE_DB_NAME" -p "$SOURCE_DB_PORT" -F c -f "/backup-data/$OUTPUT_FILE"
 
 # Check if the dump was successful
 if [ $? -eq 0 ]; then

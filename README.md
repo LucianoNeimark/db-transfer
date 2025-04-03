@@ -4,7 +4,7 @@ This repository provides a Docker image for running a PostgreSQL 16 container wi
 ## How to run
 1) Create a folder where you will store the .env and the script.sh file
 2) Execute ```docker build -t pg_backup .```
-3) Inside the created folder execute ```docker run --rm --env-file .env -v $(pwd) pg_backup```  
+3) Inside the created folder execute ```docker run --rm --env-file .env -v $(pwd)/backup-data:/backup-data pg_backup```  
 
 
 ## Disclaimer
