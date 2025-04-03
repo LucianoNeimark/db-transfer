@@ -8,4 +8,4 @@ This repository provides a Docker image for running a PostgreSQL 16 container wi
 
 
 ## Disclaimer
-Inside the .env theres an option to only generate the backup file but not restore it into any TARGET DB
+Inside the .env theres an option (ONLY_GENERATE_DUMP) to only generate the backup file but not restore it into any TARGET DB (can be true or false)
